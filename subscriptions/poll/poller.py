@@ -37,9 +37,10 @@ def poll():
             print("Subscriptions poller polling for data")
             get_product_inventory()
             get_clothing_inventory()
+            print("cheese")
         except Exception as e:
             print(e, file=sys.stderr)
-        time.sleep(10000)
+        time.sleep(10)
 
 
 if __name__ == "__main__":

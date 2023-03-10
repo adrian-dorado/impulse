@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react'
 export default function Things() {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_PRODUCTS}/products/`).then(res => res.json()).then(
-            res => setProducts(res.products)
-        )
+        fetch(`${process.env.REACT_APP_PRODUCTS}/products/`)
+            .then(res => res.json())
+            .then(res => setProducts(res.products))
     }, [])
 
     return (
@@ -27,7 +27,7 @@ export default function Things() {
                     </div>
                 </div>
             </section>
-            <div className='mx-5 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
+            <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
                 {products?.map(product => {
                     return (
                         <>
