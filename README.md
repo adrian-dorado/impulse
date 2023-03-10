@@ -74,7 +74,9 @@
 Congratulations, you've now installed Impulse on your local machine!
 
 
-# Unit Tests exist for Impulse and can be enabled by following these steps:
+# Enable Unit Tests
+
+## Unit Tests can be ran on Impulse after following these steps:
 
 - Navigate to the pgadmin container here, [PgAdmin](http://localhost:8060)
 - Login with the supplied username and password on the docker-compose.yaml file under the 'pgadmin' service.
@@ -91,9 +93,7 @@ Congratulations, you've now installed Impulse on your local machine!
 - This allows for test-databases to be created in the project
 
 
-To run tests:
-
-### Set up pgadmin:
+## Set up pgadmin:
 
 - go to [localhost:8060/login](localhost:8060/login) in the browser. Log in with any email and password.
 - Click on Add New Server; name it `postgres-data`
