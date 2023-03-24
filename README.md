@@ -15,7 +15,7 @@
 ## Users:
 
 - Users will create an account to log in and be able to log out as well.
-- Users will choose between a "Things" bow or a "Clothing" box, and a certain number of items will be in the box.
+- Users will choose between a "Things" box or a "Clothing" box, and a certain number of items will be in the box.
 
 ## Inventory:
 
