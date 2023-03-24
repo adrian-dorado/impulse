@@ -2,11 +2,15 @@
 
 Today I worked on:
 
-* Got data working for models from inventory.json file
+* Got data working for models from inventory.json file.
 
-* Learned how to get pgadmin set up.
+* Learned how to get pgadmin set up for tests.
+
+* Continued working through CI cookbook
 
 Adrian found the answer to the data issue! In objects in the json file, need to have 'model', not 'models'. And the json file needs to be in the directory with manage.py. Lookin good, now!
+
+We've started on a gitlab-ci yaml file, and are keeping it in readme form for now so that gitlab doesn't try to start integrating it before we're ready.
 
 ## Aug 4, 2022
 
@@ -14,13 +18,13 @@ Today I worked on:
 
 * Wrote code to convert product dictionary lists to Django fixtures
 
-* First steps of deployment
+* First steps of CI
 
 * Wrote a test
 
 * Having models use the data in our json data file
 
-In trying to start deployment, we changed urls in fetch statements that didn't already have environment variables. Somehow this broke the checkout for some of us, and led to an involved troubleshoot that was solved by deleting all but the first two migrations in subscriptions.
+In trying to start CI, we changed urls in fetch statements that didn't already have environment variables. Somehow this broke the checkout for some of us, and led to an involved troubleshoot that was solved by deleting all but the first two migrations in subscriptions.
 
 I wrote a test that tests if a Clothing model exists in products.
 
