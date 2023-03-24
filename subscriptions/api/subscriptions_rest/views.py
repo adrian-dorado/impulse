@@ -166,7 +166,6 @@ def clothing_box_list(request):
 
         clothing_box = ClothingBox.objects.create(**content)
         return JsonResponse(
-            clothing_box,
             encoder=ClothingBoxEncoder,
             safe=False
         )
